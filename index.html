@@ -3,52 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mats - Creative Portfolio</title>
+    <title>Your Name | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Mats</a>
-            </div>
-            <div class="nav-menu">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <a href="#" class="nav-logo">Your Name</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Hi, I'm <span class="highlight">Mats</span></h1>
-            <p class="hero-subtitle">Creative Developer & Problem Solver</p>
-            <p class="hero-description">I build digital experiences that are beautiful, functional, and user-friendly.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
+            <h1 class="hero-title">Elegant Design & Creative Solutions</h1>
+            <p class="hero-subtitle">Crafting beautiful, functional experiences that tell your story</p>
+            <a href="#work" class="cta-button">View Work</a>
         </div>
-        <div class="hero-visual">
-            <div class="floating-card card-1">
-                <i class="fas fa-code"></i>
-            </div>
-            <div class="floating-card card-2">
-                <i class="fas fa-palette"></i>
-            </div>
-            <div class="floating-card card-3">
-                <i class="fas fa-rocket"></i>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <h2 class="section-title">Selected Work</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/F5F5F5/999999?text=Project+1" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Brand Identity</h3>
+                        <p>Complete brand system for a luxury lifestyle company</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/F5F5F5/999999?text=Project+2" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Web Design</h3>
+                        <p>E-commerce platform for contemporary fashion brand</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/F5F5F5/999999?text=Project+3" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Packaging Design</h3>
+                        <p>Sustainable packaging for organic skincare line</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -56,130 +75,19 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
             <div class="about-content">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x500/F5F5F5/999999?text=Your+Photo" alt="Your Name">
+                </div>
                 <div class="about-text">
-                    <p>I'm a passionate developer with a keen eye for design and a love for creating innovative digital solutions. I believe in writing clean, efficient code and designing intuitive user experiences.</p>
-                    <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-lightbulb"></i>
-                            <span>Creative Thinker</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-puzzle-piece"></i>
-                            <span>Problem Solver</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-heart"></i>
-                            <span>Passionate Learner</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A modern online shopping experience with seamless user interactions and secure payments.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Task Management App</h3>
-                        <p>Productivity application designed to help teams collaborate and manage projects efficiently.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Firebase</span>
-                            <span>SCSS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Weather Dashboard</h3>
-                        <p>Real-time weather application with beautiful data visualizations and location-based forecasts.</p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>API</span>
-                            <span>Chart.js</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">HTML5 & CSS3</div>
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">React</div>
-                        <div class="skill-item">Vue.js</div>
-                        <div class="skill-item">TypeScript</div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Node.js</div>
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">MongoDB</div>
-                        <div class="skill-item">PostgreSQL</div>
-                        <div class="skill-item">Firebase</div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Git & GitHub</div>
-                        <div class="skill-item">Figma</div>
-                        <div class="skill-item">Webpack</div>
-                        <div class="skill-item">Docker</div>
-                        <div class="skill-item">AWS</div>
+                    <h2 class="section-title">Hello, I'm [Your Name]</h2>
+                    <p>I'm a designer dedicated to creating meaningful experiences through thoughtful design. With a background in [your field], I bring a unique perspective to every project.</p>
+                    <p>My approach combines strategic thinking with aesthetic sensibility, ensuring that each design not only looks beautiful but also serves its purpose effectively.</p>
+                    <div class="skills">
+                        <span class="skill-tag">Brand Identity</span>
+                        <span class="skill-tag">Web Design</span>
+                        <span class="skill-tag">Art Direction</span>
+                        <span class="skill-tag">Packaging</span>
                     </div>
                 </div>
             </div>
@@ -189,37 +97,17 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
+            <h2 class="section-title">Let's Create Together</h2>
+            <p class="contact-subtitle">Have a project in mind? I'd love to hear about it.</p>
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>mats@example.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <p>linkedin.com/in/mats</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <div>
-                            <h3>GitHub</h3>
-                            <p>github.com/mats</p>
-                        </div>
+                    <a href="mailto:hello@yourdomain.com" class="contact-link">hello@yourdomain.com</a>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Dribbble</a>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
@@ -227,11 +115,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Mats. Crafted with passion and code.</p>
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
