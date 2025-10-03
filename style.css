@@ -43,12 +43,14 @@ body {
     height: 100%;
     border-radius: 30px;
     opacity: 0.5;
-    transition: all .3s; /* Use 'all' to catch all properties */
+    transition: all .3s;
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
-.one { width: 80%;  opacity: 1; background: #181C14; }
-.two { width: 10%; background: #697565; }
-.three { width: 10%; background: #3C3D37; }
+.one {
+    width: 80%; opacity: 1; background:#042302;}
+.two { width: 10%; background: #042302; }
+.three { width: 10%; background: #042302; }
 
 /* Remove the conflicting sibling selector rules and simplify */
 .one:hover, .two:hover, .three:hover {
