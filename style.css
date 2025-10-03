@@ -3,11 +3,12 @@ body{
     margin: 0;
     background-image: url("images/header.jpg");
     background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
 }
 .toolbar{
     background-color: black;
     text-align: left;
-    color: white;
     height: 5vh;
     align-items: center;
     display: flex;
@@ -16,6 +17,7 @@ body{
 
 .toolbarLeft{
     text-align: left;
+    margin-left: 1vw;
 }
 
 .toolbarCenter{
@@ -24,6 +26,7 @@ body{
 
 .toolbarRight{
     text-align: end;
+    margin-right: 1vw;
 }
 
 .main{
@@ -43,42 +46,83 @@ body{
     margin: 9.5vh;
     margin-left: 0vw;
     border-radius: 30px;
+    transition: backdrop-filter 300ms;
+    gap: 1vw;
+    display: flex;
 }
+
+.rightMain:hover{
+    backdrop-filter: blur(25px);
+}
+
+.one{
+    min-width: 10%;
+    width: 10%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 30px;
+    transition:  width 300ms;
+    opacity: 0.2;
+}
+
+.one:hover{
+    width: 80%;
+}
+
+.two:hover ~ .three,
+.one:hover ~ .three {
+    width: 10%;
+}
+
+.two{
+    min-width: 10%;
+    width: 10%;
+    height: 100%;
+    background-color: red;
+    border-radius: 30px;
+    transition:  width 300ms;
+    opacity: 0.2;
+}
+
+.two:hover{
+    width: 80%;
+}
+
+.three{
+    min-width: 10%;
+    width: 80%;
+    height: 100%;
+    background-color: green;
+    border-radius: 30px;
+    transition: width 300ms;
+    opacity: 0.2;
+}
+
+.three:hover{
+    width: 80%;
+}
+
 
 .leftMain{
     width: 50vw;
     height: 95vh;
+    color: black;
 }
 
 .leftMainHead{
-    width: 50vw;
+    width: 35vw;
     height: 15vh;
-    display: flex;
-}
-
-.leftMainHeadLeft{
-    width: 15vh;
-    height: 15vh;
-    backdrop-filter: blur(10px); 
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    margin-left: 9.5vh;
-    margin-top: 9.5vh;
-
-    border-radius: 30px
+    margin: 9.5vh;
+    margin-bottom: 2vh;
+    border-radius: 30px;
+    transition: backdrop-filter 300ms;
+    backdrop-filter: blur(10px);
 }
 
-.leftMainHeadRight{
-    width: 20vw;
-    height: 15vh;
-    backdrop-filter: blur(10px); 
-    padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    margin-left: 9.5vh;
-    margin-top: 9.5vh;
-    margin-right: 0;
-    border-radius: 30px
-    
+.leftMainHead:hover{
+    backdrop-filter: blur(25px);
 }
 
 
@@ -89,7 +133,14 @@ body{
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin: 9.5vh;
-    margin-top: 20vh;
-    border-radius: 30px
+    margin-top: 0vh;
+    border-radius: 30px;
+    transition: backdrop-filter 300ms;
+
 }
+.leftMainBody:hover{
+    backdrop-filter: blur(25px);
+}
+
+
 
