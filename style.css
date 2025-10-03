@@ -1,146 +1,74 @@
-body{
-    padding: 0;
+body {
     margin: 0;
-    background-image: url("images/header.jpg");
-    background-size: cover;
+    padding: 0;
+    background: url("images/header.jpg") center/cover;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
 }
-.toolbar{
-    background-color: black;
-    text-align: left;
+
+.toolbar {
+    background: black;
     height: 5vh;
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.toolbarLeft{
-    text-align: left;
-    margin-left: 1vw;
-}
+.toolbarLeft { margin-left: 1vw; }
+.toolbarCenter { text-align: center; }
+.toolbarRight { margin-right: 1vw; }
 
-.toolbarCenter{
-    text-align: center;
-}
-
-.toolbarRight{
-    text-align: end;
-    margin-right: 1vw;
-}
-
-.main{
+.main {
     height: 95vh;
-    width: 100vw;
-    opacity: 100%;
     display: flex;
-    
 }
 
-.rightMain{
+.rightMain {
     width: 50vw;
     height: 70vh;
-    backdrop-filter: blur(10px);
+    margin: 9.5vh 9.5vh 9.5vh 0;
     padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 9.5vh;
-    margin-left: 0vw;
+    border: 1px solid rgba(255,255,255,0.3);
     border-radius: 30px;
-    transition: backdrop-filter 300ms;
-    gap: 1vw;
+    backdrop-filter: blur(0);
+    transition: backdrop-filter .3s;
     display: flex;
+    gap: 1vw;
 }
 
-.rightMain:hover{
-    backdrop-filter: blur(25px);
-}
+.rightMain:hover { backdrop-filter: blur(10px); }
 
-.one{
+.one, .two, .three {
     min-width: 10%;
-    width: 10%;
     height: 100%;
-    background-color: blue;
     border-radius: 30px;
-    transition:  width 300ms;
-    opacity: 0.2;
+    opacity: 0.5;
+    transition: all .3s; /* Use 'all' to catch all properties */
 }
 
-.one:hover{
+.one { width: 80%;  opacity: 1; background: #181C14; }
+.two { width: 10%; background: #697565; }
+.three { width: 10%; background: #3C3D37; }
+
+/* Remove the conflicting sibling selector rules and simplify */
+.one:hover, .two:hover, .three:hover {
     width: 80%;
+    opacity: 1;
 }
 
-.two:hover ~ .three,
-.one:hover ~ .three {
-    width: 10%;
-}
+.leftMain { width: 50vw; height: 95vh; }
 
-.two{
-    min-width: 10%;
-    width: 10%;
-    height: 100%;
-    background-color: red;
-    border-radius: 30px;
-    transition:  width 300ms;
-    opacity: 0.2;
-}
-
-.two:hover{
-    width: 80%;
-}
-
-.three{
-    min-width: 10%;
-    width: 80%;
-    height: 100%;
-    background-color: green;
-    border-radius: 30px;
-    transition: width 300ms;
-    opacity: 0.2;
-}
-
-.three:hover{
-    width: 80%;
-}
-
-
-.leftMain{
-    width: 50vw;
-    height: 95vh;
-    color: black;
-}
-
-.leftMainHead{
+.leftMainHead, .leftMainBody {
     width: 35vw;
-    height: 15vh;
-    padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
     margin: 9.5vh;
-    margin-bottom: 2vh;
-    border-radius: 30px;
-    transition: backdrop-filter 300ms;
-    backdrop-filter: blur(10px);
-}
-
-.leftMainHead:hover{
-    backdrop-filter: blur(25px);
-}
-
-
-.leftMainBody{
-    width: 35vw;
-    height: 45vh;
-    backdrop-filter: blur(10px); 
     padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 9.5vh;
-    margin-top: 0vh;
+    border: 1px solid rgba(255,255,255,0.3);
     border-radius: 30px;
-    transition: backdrop-filter 300ms;
-
-}
-.leftMainBody:hover{
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(0px);
+    transition: backdrop-filter .3s;
 }
 
+.leftMainHead { height: 15vh; margin-bottom: 2vh; }
+.leftMainBody { height: 45vh; margin-top: 0; }
 
-
+.leftMainHead:hover, .leftMainBody:hover { backdrop-filter: blur(10px); }
