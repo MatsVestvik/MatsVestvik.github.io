@@ -11,12 +11,10 @@ body {
     height: 5vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1vw;
+    justify-content: flex-end; /* Align all items to the right */
+    gap: 20px; /* Space between items */
 }
-
-.toolbarLeft { margin-left: 1vw; }
-.toolbarCenter { text-align: center; }
-.toolbarRight { margin-right: 1vw; }
 
 .main {
     height: 95vh;
@@ -24,7 +22,7 @@ body {
 }
 
 .rightMain {
-    width: 50vw;
+    width: 80vw;
     height: 70vh;
     margin: 9.5vh 9.5vh 9.5vh 0;
     padding: 20px;
@@ -38,36 +36,39 @@ body {
 
 .rightMain:hover { backdrop-filter: blur(10px); }
 
-.one, .two, .three {
-    min-width: 10%;
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine  {
+    min-width: 5%;
     height: 100%;
     border-radius: 30px;
     opacity: 0.5;
     transition: all .3s;
     border: 1px solid rgba(255,255,255,0.3);
+    width: 5%;
+    background: #042302;
 }
 
-.one {
-    width: 80%; opacity: 1; background:#042302;}
-.two { width: 10%; background: #042302; }
-.three { width: 10%; background: #042302; }
+.one {width: 80%; opacity: 0.8; background-color: dimgrey;}
 
-/* Remove the conflicting sibling selector rules and simplify */
-.one:hover, .two:hover, .three:hover {
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover,
+ .six:hover, .seven:hover, .eight:hover, .nine:hover  {
     width: 80%;
     opacity: 1;
 }
 
-.leftMain { width: 50vw; height: 95vh; }
+.leftMain { width: 25vw; height: 95vh; }
 
 .leftMainHead, .leftMainBody {
-    width: 35vw;
+    width: 15vw;
     margin: 9.5vh;
     padding: 20px;
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 30px;
     backdrop-filter: blur(0px);
     transition: backdrop-filter .3s;
+}
+
+.leftMainHead{
+    text-align: center;
 }
 
 .leftMainHead { height: 15vh; margin-bottom: 2vh; }
