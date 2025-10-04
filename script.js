@@ -33,34 +33,34 @@ document.addEventListener('DOMContentLoaded', function() {
             for my first semester`
         },
         4: {
-            title: "4",
-            boxContent: "4",
-            mainContent: `4`
+            title: "Coming Soon...",
+            boxContent: "This area is under construction",
+            mainContent: `New projects under way`
         },
         5: {
-            title: "5",
-            boxContent: "5",
-            mainContent: `5`
+            title: "Coming Soon...",
+            boxContent: "This area is under construction",
+            mainContent: `New projects under way`
         },
         6: {
-            title: "6",
-            boxContent: "6",
-            mainContent: `6`
+            title: "Coming Soon...",
+            boxContent: "This area is under construction",
+            mainContent: `New projects under way`
         },
         7: {
-            title: "7",
-            boxContent: "7",
-            mainContent: `7`
+            title: "Coming Soon...",
+            boxContent: "This area is under construction",
+            mainContent: `New projects under way`
         },
         8: {
-            title: "8",
-            boxContent: "8",
-            mainContent: `8`
+            title: "Coming Soon...",
+            boxContent: "This area is under construction",
+            mainContent: `New projects under way`
         },
         9: {
-            title: "9",
-            boxContent: "9",
-            mainContent: `9`
+            title: "Coming Soon...",
+            boxContent: "This area is under construction",
+            mainContent: `New projects under way`
         }
     };
 
@@ -131,3 +131,4 @@ function updateClock() {
 
     document.getElementById('date').textContent = "[" + dateString + "]";
 }
+
