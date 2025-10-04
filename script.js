@@ -17,14 +17,20 @@ document.addEventListener('DOMContentLoaded', function() {
                          hovering over the numbered containers to the right.`
         },
         2: {
-            title: "2",
-            boxContent: "2",
-            mainContent: '2'
+            title: "LEGO robot",
+            boxContent: `This was a group project where we where given the 
+            task of creating a lego robot that could perform various tasks. 
+            One such task was making a line following robot that would compete
+            in a race.`,
+            mainContent: `This project was the first poject assigned to us 
+            when starting my bachelor. It tought me how to work in a team, 
+            and how to do new things`
         },
         3: {
-            title: "3",
-            boxContent: "3",
-            mainContent: `3`
+            title: "JAVA project",
+            boxContent: "This project contained several modules",
+            mainContent: `As part of my education at NTNU i made a java projct
+            for my first semester`
         },
         4: {
             title: "4",
@@ -64,13 +70,13 @@ document.addEventListener('DOMContentLoaded', function() {
         boxes.forEach(b => {
             b.classList.remove('active');
             b.style.width = '10%';
-            b.style.opacity = '0.5';
+            b.style.opacity = '0.3';
         });
         
         // Add active class to current box and expand it
         box.classList.add('active');
         box.style.width = '80%';
-        box.style.opacity = '1';
+        box.style.opacity = '0.6';
 
         // Get content ID
         const contentId = box.getAttribute('data-content-id');

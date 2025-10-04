@@ -7,14 +7,19 @@ body {
 }
 
 .toolbar {
-    background: black;
+    padding-right: 1vw;
     height: 5vh;
     display: flex;
     align-items: center;
     gap: 1vw;
-    justify-content: flex-end; /* Align all items to the right */
-    gap: 20px; /* Space between items */
+    justify-content: flex-end;
+    gap: 1vw; 
+    
 }
+
+.toolbarRight{color: green;}
+
+.toolbarLeft{color: red;}
 
 .main {
     height: 95vh;
@@ -28,13 +33,11 @@ body {
     padding: 20px;
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 30px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(25px);
     transition: backdrop-filter .3s;
     display: flex;
-    gap: 1vw;
+    gap: 0.3vw;
 }
-
-.rightMain:hover { backdrop-filter: blur(25px); }
 
 .rightMain > div {
     position: relative;
@@ -47,7 +50,11 @@ body {
     font-weight: bold;
     transition: all 0.3s ease;
     text-align: center;
-    padding: 2vh;
+    padding: 10vh 0.7vw; 
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    line-height: 1.4;
+    letter-spacing: 1px;
 }
 
 .box-content {
@@ -84,11 +91,10 @@ body {
     min-width: 5%;
     height: 100%;
     border-radius: 30px;
-    opacity: 0.5;
     transition: all .3s;
     border: 1px solid rgba(255,255,255,0.3);
     width: 5%;
-    background: black;
+    background: #141414;
 }
 
 .one {background-color: dimgrey;}
@@ -116,7 +122,7 @@ body {
 }
 
 .leftMainHead { height: 15vh; margin-bottom: 2vh; }
-.leftMainBody { height: 45vh; margin-top: 0; }
+.leftMainBody { height: 47vh; margin-top: 0; }
 
 .leftMainHead:hover, .leftMainBody:hover { backdrop-filter: blur(10px); }
 
