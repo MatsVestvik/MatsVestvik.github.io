@@ -7,81 +7,100 @@ document.addEventListener('DOMContentLoaded', function() {
     const originalTitle = titleElement.textContent;
     const originalContent = contentArea.innerHTML;
 
-    // Track active box
-    let activeBox = null;
-
     // Content data for each numbered div
     const contentData = {
         1: {
             title: "Welcome",
-            content: `Welcome to my portfolio. you can navigate my projects
-                     by hovering over the green containers`
+            boxContent: `Welcome to my portfolio. You can navigate my projects
+                        by hovering over the containers.`,
+            mainContent: `I'm Mats Orpia Vestvik, explore my work by 
+                         hovering over the numbered containers to the right.`
         },
         2: {
             title: "2",
-            content: "something 2"
+            boxContent: "2",
+            mainContent: '2'
         },
         3: {
             title: "3",
-            content: "something 3"
+            boxContent: "3",
+            mainContent: `3`
         },
         4: {
             title: "4",
-            content: "something 4"
+            boxContent: "4",
+            mainContent: `4`
         },
         5: {
             title: "5",
-            content: "something 5"
+            boxContent: "5",
+            mainContent: `5`
         },
         6: {
             title: "6",
-            content: "something 6"
+            boxContent: "6",
+            mainContent: `6`
         },
         7: {
             title: "7",
-            content: "something 7"
+            boxContent: "7",
+            mainContent: `7`
         },
         8: {
             title: "8",
-            content: "something 8"
+            boxContent: "8",
+            mainContent: `8`
         },
         9: {
             title: "9",
-            content: "something 9"
+            boxContent: "9",
+            mainContent: `9`
         }
     };
+
+    // Function to activate a box
+    function activateBox(box) {
+        // Remove active class from all boxes and reset styles
+        boxes.forEach(b => {
+            b.classList.remove('active');
+            b.style.width = '10%';
+            b.style.opacity = '0.5';
+        });
+        
+        // Add active class to current box and expand it
+        box.classList.add('active');
+        box.style.width = '80%';
+        box.style.opacity = '1';
+
+        // Get content ID
+        const contentId = box.getAttribute('data-content-id');
+        const content = contentData[contentId];
+        
+        if (content) {
+            // Update content IN THE BOX (short version)
+            const boxContentElement = box.querySelector('.box-content');
+            boxContentElement.innerHTML = `
+                <h3>${content.title}</h3>
+                <p style="white-space: pre-line; margin-top: 10px; font-size: 14px;">${content.boxContent}</p>
+            `;
+
+            // Update content IN THE LEFT MAIN AREA (detailed version)
+            titleElement.textContent = content.title;
+            contentArea.innerHTML = `<p style="font-size: larger; white-space: pre-line;">${content.mainContent}</p>`;
+        }
+    }
+
+    // Activate box one when page loads
+    const boxOne = document.querySelector('.one');
+    if (boxOne) {
+        activateBox(boxOne);
+    }
 
     // Add hover event listeners to each box
     boxes.forEach(box => {
         box.addEventListener('mouseenter', function() {
-            // Reset all boxes to default state (only visual)
-            boxes.forEach(b => {
-                b.style.width = '5%';
-                b.style.opacity = '0.5';
-            });
-            
-            // Expand current box
-            this.style.width = '80%';
-            this.style.opacity = '0.8';
-
-            // Get content ID from the box class
-            const boxNumber = this.className.match(/(one|two|three|four|five|six|seven|eight|nine)/)[0];
-            const numberMap = {
-                'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5,
-                'six': 6, 'seven': 7, 'eight': 8, 'nine': 9
-            };
-            const contentId = numberMap[boxNumber];
-            const content = contentData[contentId];
-            
-            if (content) {
-                // Update the title and content
-                titleElement.textContent = content.title;
-                contentArea.innerHTML = `<p style="font-size: larger; white-space: pre-line;">${content.content}</p>`;
-                
-                activeBox = this;
-            }
+            activateBox(this);
         });
-
     });
 
     // Initialize clock
