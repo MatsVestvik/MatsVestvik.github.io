@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="welcome-layout">
                 <div class="hero-section">
                     <h2>${content.title}</h2>
-                    <div class="welcome-icon">👋</div>
+                    <div class="welcome-icon">🤖</div>
                 </div>
                 <div class="content-section">
                     <p>${content.boxContent}</p>
@@ -181,16 +181,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     name: "Frameworks",
                     skills: [
-                        { name: "React", level: 80 },
-                        { name: "Node.js", level: 75 },
-                        { name: "Spring Boot", level: 70 }
+                        { name: "React", level: 8 },
+                        { name: "Node.js", level: 25 },
+                        { name: "Spring Boot", level: 7 }
                     ]
                 },
                 {
                     name: "Tools",
                     skills: [
                         { name: "Git", level: 88 },
-                        { name: "Docker", level: 65 },
+                        { name: "Conda", level: 65 },
                         { name: "VS Code", level: 92 }
                     ]
                 }
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
             mainContent: `My journey through education and projects.`,
             events: [
                 {
-                    date: "2023",
+                    date: "2025",
                     title: "Started Bachelor's Degree",
                     description: "Began computer science studies at NTNU"
                 },
