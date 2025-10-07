@@ -1,0 +1,64 @@
+.project-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    overflow-y: auto;
+    width: 90%;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+}
+
+.project-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tech-badge, .duration {
+    background: rgba(74, 156, 255, 0.2);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    color: #4a9cff;
+}
+
+.project-features h4, .project-learnings h4 {
+    color: #4a9cff;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.feature-icon {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.project-learnings ul {
+    margin: 0;
+    padding-left: 15px;
+    font-size: 12px;
+}
+
+.project-learnings li {
+    margin-bottom: 5px;
+}

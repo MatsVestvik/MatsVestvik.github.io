@@ -39,10 +39,11 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
-    transition: all 1s ease;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition-delay: 0.3s;
 }
 
 .rightMain > div.active .box-content {

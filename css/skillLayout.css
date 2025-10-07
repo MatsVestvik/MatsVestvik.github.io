@@ -1,0 +1,49 @@
+.skills-layout {
+    height: 100%;
+    overflow-y: auto;
+    width: 90%;
+}
+
+.skills-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-category h4 {
+    color: #4a9cff;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-name {
+    font-size: 12px;
+    min-width: 80px;
+}
+
+.skill-level {
+    flex-grow: 1;
+    background: rgba(255,255,255,0.1);
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skill-bar {
+    height: 100%;
+    background: #4a9cff;
+    transition: width 0.3s ease;
+}

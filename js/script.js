@@ -1,37 +1,24 @@
 // data.js
 const layoutTemplates = {
+
     welcome: (content) => `
         <div class="welcome-layout">
         <div class="hero-section">
             <div class="hero-content">
-                <h2>${content.title}</h2>
+                
                 ${content.image ? `
                     <div class="hero-image">
                         <img src="${content.image}" alt="${content.imageAlt || 'Welcome Image'}">
                     </div>
                 ` : ''}
+                <p>${content.boxContent}</p>
             </div>
         </div>
         
-        <div class="content-section">
-            <p>${content.boxContent}</p>
-        </div>
-        
-        <div class="project-features">
-            <h4>Key Features</h4>
-            <div class="features-grid">
-                ${content.features ? content.features.map(feature => `
-                    <div class="feature-item">
-                        <span class="feature-icon">✓</span>
-                        <span>${feature}</span>
-                    </div>
-                `).join('') : ''}
-            </div>
-        </div>
 
         <div class="cta-buttons">
-            <button class="btn-primary">Explore Projects</button>
-            <button class="btn-secondary">Get in Touch</button>
+            <button class="btn-primary"><a href="https://github.com/MatsVestvik/MatsVestvik.github.io">GitHub</a></button>
+            <button class="btn-primary">Linkdin</button>
         </div>
     </div>
 `,
@@ -124,18 +111,14 @@ const contentData = {
     1: {
         title: "Welcome",
         layout: "welcome",
-        boxContent: `Welcome to my portfolio. You can navigate my projects
+        boxContent: `Welcome to my portfolio. Bellow you can find 
+                    Linkdin if you want to get in touch and my my github if you want
+                     more details on my projects. You can navigate my projects
                     by hovering over the containers.`,
-        mainContent: `I'm Mats Orpia Vestvik, explore my work by 
-                     hovering over the numbered containers to the right.`,
+        mainContent: `I'm Mats Orpia Vestvik, I enjoy learning and doing new things.`,
         image: "../images/portrait.png", // Add this line
         imageAlt: "portrait", // Optional alt text
-        features: [
-            "Line following algorithm",
-            "Obstacle detection system",
-            "Real-time sensor processing",
-            "Team collaboration"
-        ],
+        
     },
     2: {
         title: "LEGO Robot",
