@@ -44,6 +44,63 @@
     color: #4a9cff;
 }
 
+.welcome-layout .hero-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.welcome-layout .hero-image img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* For the advanced layout */
+.welcome-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome-image {
+    flex-shrink: 0;
+}
+
+.welcome-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.welcome-subtitle {
+    color: #666;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .welcome-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .welcome-image img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
 /* Project Layout */
 .project-layout {
     display: flex;
