@@ -28,7 +28,7 @@ const layoutTemplates = {
             <div class="project-header">
                 <h2>${content.title}</h2>
                 <div class="project-meta">
-                    ${content.tech ? `<span class="tech-badge">${content.tech}</span>` : ''}
+                    ${content.tech ? `<span class="tech-badge"><a href="https://github.com/MatsVestvik/MatsVestvik.github.io">${content.tech}</a></span>` : ''}
                     ${content.duration ? `<span class="duration">${content.duration}</span>` : ''}
                 </div>
             </div>
@@ -148,22 +148,22 @@ const contentData = {
     3: {
         title: "JAVA Project",
         layout: "project",
-        boxContent: "A comprehensive Java application with multiple modules including database integration and GUI interface.",
+        boxContent: "coming soon",
         mainContent: `As part of my education at NTNU I made a Java project
         for my first semester that involved object-oriented programming principles.`,
-        tech: "Java + MySQL",
+        tech: "Java",
         duration: "3 months",
         features: [
-            "Database CRUD operations",
-            "Graphical user interface",
-            "Multi-threading",
-            "File I/O operations"
+            "4",
+            "3",
+            "2",
+            "1"
         ],
         learnings: [
-            "Object-oriented design patterns",
-            "Database management systems",
-            "User interface development",
-            "Software testing methodologies"
+            "1",
+            "2",
+            "3",
+            "4"
         ]
     },
     4: {
