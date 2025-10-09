@@ -14,12 +14,8 @@ body {
     gap: 1vw;
     justify-content: flex-end;
     gap: 1vw; 
-    
+    color: white;
 }
-
-.toolbarRight{color: white;}
-
-.toolbarLeft{color: white;}
 
 .main {
     height: 95vh;

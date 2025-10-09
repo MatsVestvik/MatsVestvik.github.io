@@ -33,26 +33,34 @@ const layoutTemplates = {
                 </div>
             </div>
             <div class="project-description">
+                <div class="project-image">
+                    <img src="${content.image}" alt="${content.imageAlt || 'project image'}">
+                </div>
                 <p>${content.boxContent}</p>
+                
             </div>
-            <div class="project-features">
-                <h4>Key Features</h4>
-                <div class="features-grid">
-                    ${content.features ? content.features.map(feature => `
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>${feature}</span>
-                        </div>
-                    `).join('') : ''}
+            <div class = "project-footer">
+                
+                ${content.learnings ? `
+                <div class="project-learnings">
+                    <h4>What I Learned</h4>
+                    <ul>
+                        ${content.learnings.map(learning => `<li>${learning}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="project-features">
+                    <h4 class="project-keyfeatures">Key Features</h4>
+                    <div class="features-grid">
+                        ${content.features ? content.features.map(feature => `
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>${feature}</span>
+                            </div>
+                        `).join('') : ''}
+                    </div>
                 </div>
             </div>
-            ${content.learnings ? `
-            <div class="project-learnings">
-                <h4>What I Learned</h4>
-                <ul>
-                    ${content.learnings.map(learning => `<li>${learning}</li>`).join('')}
-                </ul>
-            </div>
+            
             ` : ''}
         </div>
     `,
@@ -116,7 +124,7 @@ const contentData = {
                      more details on my projects. You can navigate my projects
                     by hovering over the containers.`,
         mainContent: `I'm Mats Orpia Vestvik, I enjoy learning and doing new things.`,
-        image: "../images/portrait.png", // Add this line
+        image: "../images/portrait.png",
         imageAlt: "portrait", // Optional alt text
         
     },
@@ -131,6 +139,8 @@ const contentData = {
         mainContent: `This project was the first project assigned to us 
         when starting my bachelor. It taught me how to work in a team, 
         and how to do new things`,
+        image: "../images/LegoRobot.jpeg",
+        imageAlt: "lego robot",
         tech: "LEGO Mindstorms",
         duration: "2 months",
         features: [
@@ -149,22 +159,26 @@ const contentData = {
     3: {
         title: "JAVA Project",
         layout: "project",
-        boxContent: "coming soon",
+        boxContent: `This is a java project where i created a diary. It has no gui and consist of pure JAVA willpower. 
+        Creating this product was challenging, because there where no visual representation of what was happening. There where several deep nested 
+        if statements that got me lost several times, but we got there in the end. `,
         mainContent: `As part of my education at NTNU I made a Java project
         for my first semester that involved object-oriented programming principles.`,
+        image: "../images/uc.png",
+        imageAlt: "java project",
         tech: "Java",
         duration: "3 months",
         features: [
-            "4",
-            "3",
-            "2",
-            "1"
+            "Viable tool",
+            "Immutable and secure system",
+            "Structured code",
+            "Something"
         ],
         learnings: [
-            "1",
-            "2",
-            "3",
-            "4"
+            "Creating larger project",
+            "Structuring code",
+            "somehting",
+            "something"
         ]
     },
     4: {

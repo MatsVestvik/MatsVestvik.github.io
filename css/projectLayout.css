@@ -35,17 +35,22 @@
     font-size: 14px;
 }
 
+.project-keyfeatures{
+    margin-left: 5vw;
+}
+
 .features-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
 }
 
 .feature-item {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 12px;
+    gap: 0.5vw;
+    font-size: 1vw;
+    margin-left: 4vw;
+    
 }
 
 .feature-icon {
@@ -57,8 +62,33 @@
     margin: 0;
     padding-left: 15px;
     font-size: 12px;
+    
 }
 
 .project-learnings li {
     margin-bottom: 5px;
+    
+}
+
+.project-description{
+    display: flex ;
+}
+.project-footer{
+    display: flex;
+    
+}
+
+.project-image {
+    text-align: center;
+    margin: 0; /* Remove margin since we're using gap */
+    flex-shrink: 0;
+    margin-right: 2vw;
+    margin-left: 2vw; /* Prevent image from shrinking */
+}
+
+.project-image img {
+    max-width: 20vw; /* Slightly smaller for side-by-side layout */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }

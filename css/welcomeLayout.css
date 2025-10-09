@@ -7,10 +7,8 @@
 }
 
 .hero-section {
-    margin-bottom: 20px;
     display: flex; /* Added flex display */
     align-items: flex-start; /* Align items to top */
-    gap: 20px; /* Space between image and text */
 }
 
 
@@ -35,19 +33,6 @@
     color: white;
 }
 
-.welcome-layout .hero-image {
-    text-align: center;
-    margin: 0; /* Remove margin since we're using gap */
-    flex-shrink: 0; /* Prevent image from shrinking */
-}
-
-.welcome-layout .hero-image img {
-    max-width: 150px; /* Slightly smaller for side-by-side layout */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
 .hero-content {
     display: flex;
     align-items: flex-start;
@@ -59,36 +44,21 @@
     flex: 1; /* Take remaining space */
 }
 
+.hero-image {
+    text-align: center;
+    margin: 0; /* Remove margin since we're using gap */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.hero-image img {
+    max-height: 40vh; /* Slightly smaller for side-by-side layout */
+    width: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
+}
+
 /* Remove or update these since we're using hero-section instead */
-.welcome-header {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 20px;
-}
 
-.welcome-text {
-    flex: 1;
-}
-
-.welcome-image {
-    flex-shrink: 0;
-}
-
-.welcome-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #fff;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-.welcome-subtitle {
-    color: #666;
-    font-size: 1.2em;
-    margin-top: 5px;
-}
 
 /* Responsive design */
 @media (max-width: 768px) {
