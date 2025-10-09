@@ -49,6 +49,16 @@ body {
 
 .leftMainHead:hover, .leftMainBody:hover { backdrop-filter: blur(10px); }
 
+a {
+  color: inherit;        /* Use parent element's text color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Optional: add underline on hover */
+  
+}
+
 
 
 

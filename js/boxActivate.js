@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Remove active class from all boxes and reset styles
         boxes.forEach(b => {
             b.classList.remove('active');
-            b.style.width = '10%';
+            b.style.width = '7%';
             b.style.opacity = '0.3';
         });
         
         // Add active class to current box and expand it
         box.classList.add('active');
-        box.style.width = '80%';
-        box.style.opacity = '0.6';
+        box.style.width = '90%';
+        box.style.opacity = '0.7';
 
         // Get content ID
         const contentId = box.getAttribute('data-content-id');

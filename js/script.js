@@ -17,7 +17,7 @@ const layoutTemplates = {
         
 
         <div class="cta-buttons">
-            <button class="btn-primary"><a href="https://github.com/MatsVestvik/MatsVestvik.github.io">GitHub</a></button>
+            <button class="btn-primary"><a href="https://github.com/MatsVestvik/MatsVestvik.github.io" >GitHub</a></button>
             <button class="btn-primary">Linkdin</button>
         </div>
     </div>
@@ -28,7 +28,7 @@ const layoutTemplates = {
             <div class="project-header">
                 <h2>${content.title}</h2>
                 <div class="project-meta">
-                    ${content.tech ? `<span class="tech-badge"><a href="https://github.com/MatsVestvik/MatsVestvik.github.io">${content.tech}</a></span>` : ''}
+                    ${content.tech ? `<span class="tech-badge"><a href="https://github.com/MatsVestvik/LegoEV3/blob/main/main.py" >${content.tech}</a></span>` : ''}
                     ${content.duration ? `<span class="duration">${content.duration}</span>` : ''}
                 </div>
             </div>
@@ -126,7 +126,8 @@ const contentData = {
         boxContent: `This was a group project where we where given the 
         task of creating a lego robot that could perform various tasks. 
         One such task was making a line following robot that would compete
-        in a race.`,
+        in a race. Visit my <a href="https://github.com/MatsVestvik/LegoEV3/blob/main/main.py" style="text-decoration: underline;">
+        github</a> to explore the code`,
         mainContent: `This project was the first project assigned to us 
         when starting my bachelor. It taught me how to work in a team, 
         and how to do new things`,
