@@ -6,6 +6,10 @@ body {
     color: white;
 }
 
+body:hover > .my-div ~ body::before {
+    background: blue;
+}
+
 .toolbar {
     padding-right: 1vw;
     height: 3vh;

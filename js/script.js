@@ -18,7 +18,7 @@ const layoutTemplates = {
 
         <div class="cta-buttons">
             <button class="btn-primary"><a href="https://github.com/MatsVestvik/MatsVestvik.github.io" >GitHub</a></button>
-            <button class="btn-primary">Linkdin</button>
+            <button class="btn-primary"><a href="https://www.youtube.com/@MatsOrpiaVestvik" >YouTube</a></button>
         </div>
     </div>
 `,
@@ -119,10 +119,9 @@ const contentData = {
     1: {
         title: "Welcome",
         layout: "welcome",
-        boxContent: `Welcome to my portfolio. Bellow you can find 
-                    Linkdin if you want to get in touch and my my github if you want
-                     more details on my projects. You can navigate my projects
-                    by hovering over the containers.`,
+        boxContent: `Welcome to my portfolio. Connect with me on LinkedIn or explore my 
+        GitHub for detailed project information. Navigate by hovering over the project
+         containers.`,
         mainContent: `I'm Mats Orpia Vestvik, I enjoy learning and doing new things.`,
         image: "../images/portrait.png",
         imageAlt: "portrait", // Optional alt text
@@ -143,6 +142,7 @@ const contentData = {
         imageAlt: "lego robot",
         tech: "LEGO Mindstorms",
         duration: "2 months",
+        backgroundVideo: "../images/legovideo.mp4",
         features: [
             "Line following algorithm",
             "Obstacle detection system",
@@ -168,6 +168,7 @@ const contentData = {
         imageAlt: "java project",
         tech: "Java",
         duration: "3 months",
+        backgroundGif: "../images/matrix.gif",
         features: [
             "Viable tool",
             "Immutable and secure system",
@@ -189,26 +190,26 @@ const contentData = {
             {
                 name: "Programming",
                 skills: [
-                    { name: "Java", level: 85 },
-                    { name: "Python", level: 78 },
-                    { name: "JavaScript", level: 90 },
-                    { name: "HTML/CSS", level: 95 }
+                    { name: "Java", level: 14 },
+                    { name: "Python", level: 5 },
+                    { name: "JavaScript", level: 10 },
+                    { name: "HTML/CSS", level: 40 }
                 ]
             },
             {
                 name: "Frameworks",
                 skills: [
-                    { name: "React", level: 8 },
-                    { name: "Node.js", level: 25 },
-                    { name: "Spring Boot", level: 7 }
+                    { name: "React", level: 1 },
+                    { name: "Node.js", level: 1 },
+                    { name: "Spring Boot", level: 1 }
                 ]
             },
             {
                 name: "Tools",
                 skills: [
-                    { name: "Git", level: 88 },
-                    { name: "Conda", level: 65 },
-                    { name: "VS Code", level: 92 }
+                    { name: "Git", level: 60 },
+                    { name: "Conda", level: 20 },
+                    { name: "VS Code", level: 45 }
                 ]
             }
         ]

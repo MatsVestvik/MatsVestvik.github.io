@@ -22,3 +22,4 @@ function updateClock() {
 
     document.getElementById('date').textContent = dateString;
 }
+
