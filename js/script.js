@@ -28,7 +28,7 @@ const layoutTemplates = {
             <div class="project-header">
                 <h2>${content.title}</h2>
                 <div class="project-meta">
-                    ${content.tech ? `<span class="tech-badge"><a href="https://github.com/MatsVestvik/LegoEV3" >${content.tech}</a></span>` : ''}
+                    ${content.tech ? `<span class="tech-badge"><a href="https://github.com/MatsVestvik" >${content.tech}</a></span>` : ''}
                     ${content.duration ? `<span class="duration">${content.duration}</span>` : ''}
                 </div>
             </div>
@@ -160,27 +160,30 @@ const contentData = {
     3: {
         title: "JAVA Project",
         layout: "project",
-        boxContent: `This is a java project where i created a diary. It has no gui and consist of pure JAVA willpower. 
-        Creating this product was challenging, because there where no visual representation of what was happening. There where several deep nested 
-        if statements that got me lost several times, but we got there in the end. `,
+        boxContent: `During the first year of my computer science degree we completed 11 java
+         assignments not including a final exam program. These where simple tasks that tought me the fundamentals
+         of coding and java. Explore these 
+         <a href="https://github.com/MatsVestvik/IDATT1003" style="text-decoration: underline;">project</a> or see my
+         <a href="https://github.com/NTNU-IDI/mappe-2025-MatsVestvik" style="text-decoration: underline;">final</a>
+          project in my github.`,
         mainContent: `As part of my education at NTNU I made a Java project
         for my first semester that involved object-oriented programming principles.`,
-        image: "../images/uc.png",
+        image: "../images/Javalogo.png",
         imageAlt: "java project",
         tech: "Java",
         duration: "3 months",
-        backgroundGif: "../images/matrix.gif",
+        backgroundGif: "../images/header.jpg",
         features: [
-            "Viable tool",
+            "Structure and readablity",
             "Immutable and secure system",
-            "Structured code",
-            "Something"
+            "Structured code and coding convention",
+            "Diary system"
         ],
         learnings: [
             "Creating larger project",
             "Structuring code",
-            "somehting",
-            "something"
+            "Security principles",
+            "Constructing clean code"
         ]
     },
     4: {
