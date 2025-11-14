@@ -17,7 +17,7 @@ const layoutTemplates = {
         
 
         <div class="cta-buttons">
-            <button class="btn-primary"><a href="https://github.com/MatsVestvik/MatsVestvik.github.io" >GitHub</a></button>
+            <button class="btn-primary"><a href="https://github.com/MatsVestvik" >GitHub</a></button>
             <button class="btn-primary"><a href="https://www.youtube.com/@MatsOrpiaVestvik" >YouTube</a></button>
         </div>
     </div>
@@ -28,7 +28,7 @@ const layoutTemplates = {
             <div class="project-header">
                 <h2>${content.title}</h2>
                 <div class="project-meta">
-                    ${content.tech ? `<span class="tech-badge"><a href="https://github.com/MatsVestvik/LegoEV3/blob/main/main.py" >${content.tech}</a></span>` : ''}
+                    ${content.tech ? `<span class="tech-badge"><a href="https://github.com/MatsVestvik/LegoEV3" >${content.tech}</a></span>` : ''}
                     ${content.duration ? `<span class="duration">${content.duration}</span>` : ''}
                 </div>
             </div>
@@ -128,13 +128,14 @@ const contentData = {
         
     },
     2: {
-        title: "LEGO Robot",
+        title: "LEGO EV3 defence system",
         layout: "project",
-        boxContent: `This was a group project where we where given the 
-        task of creating a lego robot that could perform various tasks. 
-        One such task was making a line following robot that would compete
-        in a race. Visit my <a href="https://github.com/MatsVestvik/LegoEV3/blob/main/main.py" style="text-decoration: underline;">
-        github</a> to explore the code`,
+        boxContent: `This was a group project where we made a turret system. The system was
+         capable of shooting as far as 5 meters, with different methods for wheter you would want to 
+         hit the target from above or from the side
+          Visit my <a href="https://github.com/MatsVestvik/LegoEV3" style="text-decoration: underline;">github</a> to explore the code
+          Or visit my <a href="https://www.youtube.com/watch?v=-ISvwlWxbGg" style="text-decoration: underline;">YouTube</a> channel for a demonstration
+        `,
         mainContent: `This project was the first project assigned to us 
         when starting my bachelor. It taught me how to work in a team, 
         and how to do new things`,
@@ -144,14 +145,14 @@ const contentData = {
         duration: "2 months",
         backgroundVideo: "../images/legovideo.mp4",
         features: [
-            "Line following algorithm",
-            "Obstacle detection system",
-            "Real-time sensor processing",
+            "Physics calulations",
+            "Coordinate to vector calculations",
+            "Creative builing",
             "Team collaboration"
         ],
         learnings: [
             "Teamwork and project management",
-            "Sensor integration and calibration",
+            "physics integration and calibration",
             "Algorithm optimization",
             "Problem-solving under constraints"
         ]
