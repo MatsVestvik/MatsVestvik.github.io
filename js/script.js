@@ -19,6 +19,7 @@ const layoutTemplates = {
         <div class="cta-buttons">
             <button class="btn-primary"><a href="https://github.com/MatsVestvik" >GitHub</a></button>
             <button class="btn-primary"><a href="https://www.youtube.com/@MatsOrpiaVestvik" >YouTube</a></button>
+            <button class="btn-primary"><a href="https://www.linkedin.com/in/mats-vestvik-928066388/" >Linkedin</a></button>
         </div>
     </div>
 `,
