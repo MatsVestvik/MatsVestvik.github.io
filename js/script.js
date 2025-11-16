@@ -128,7 +128,7 @@ const contentData = {
         
     },
     2: {
-        title: "LEGO EV3 defence system",
+        title: "LEGO EV3 Turret",
         layout: "project",
         boxContent: `This was a group project where we made a turret system. The system was
          capable of shooting as far as 5 meters, with different methods for wheter you would want to 
