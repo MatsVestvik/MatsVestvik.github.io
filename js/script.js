@@ -195,10 +195,10 @@ const contentData = {
             {
                 name: "Programming",
                 skills: [
-                    { name: "Java", level: 14 },
-                    { name: "Python", level: 5 },
-                    { name: "JavaScript", level: 10 },
-                    { name: "HTML/CSS", level: 40 }
+                    { name: "Java", level: 80 },
+                    { name: "Python", level: 50 },
+                    { name: "JavaScript", level: 40 },
+                    { name: "HTML/CSS", level: 90 }
                 ]
             },
             {
@@ -212,9 +212,9 @@ const contentData = {
             {
                 name: "Tools",
                 skills: [
-                    { name: "Git", level: 60 },
-                    { name: "Conda", level: 20 },
-                    { name: "VS Code", level: 45 }
+                    { name: "Git", level: 80 },
+                    { name: "Conda", level: 30 },
+                    { name: "VS Code", level: 80 }
                 ]
             }
         ]
