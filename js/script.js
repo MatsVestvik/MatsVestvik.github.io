@@ -135,7 +135,8 @@ const contentData = {
          capable of shooting as far as 5 meters, with different methods for wheter you would want to 
          hit the target from above or from the side
           Visit my <a href="https://github.com/MatsVestvik/LegoEV3" style="text-decoration: underline;">github</a> to explore the code
-          Or visit my <a href="https://www.youtube.com/watch?v=-ISvwlWxbGg" style="text-decoration: underline;">YouTube</a> channel for a demonstration
+          Or visit my <a href="https://www.youtube.com/watch?v=-ISvwlWxbGg" style="text-decoration: underline;">YouTube</a> channel for a demonstration.
+          You can also have a look at the <a href="docs/idatt1004__2025_14_prosjektrapport.pdf" style="text-decoration: underline;">raport</a> here
         `,
         mainContent: `This project was the first project assigned to us 
         when starting my bachelor. It taught me how to work in a team, 
