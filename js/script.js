@@ -170,7 +170,7 @@ const contentData = {
           project in my github.`,
         mainContent: `As part of my education at NTNU I made a Java project
         for my first semester that involved object-oriented programming principles.`,
-        image: "../images/Diary.png",
+        image: "../images/diary.png",
         imageAlt: "java project",
         tech: "Java",
         duration: "3 months",
