@@ -243,10 +243,29 @@ const contentData = {
         ]
     },
     6: {
-        title: "Coming Soon...",
-        layout: "default",
-        boxContent: "This area is under construction",
-        mainContent: `New projects under way`
+        title: "JAVAFX Game",
+        layout: "project",
+        boxContent: `As a hobby prject during my studies I made a simple game in JavaFX.
+         The game is inspired by man y roguelike games where you explore dungeons and fight monsters.
+         The game is still under development.`,
+        mainContent: `The game is developed in with JavaFX and all art is done by me in pixel art style.`,
+        image: "../images/Basic_Character.gif",
+        imageAlt: "java project",
+        tech: "Java",
+        duration: "3 months",
+        backgroundGif: "images/Recording 2025-12-21 171230.gif",
+        features: [
+            "Structure and readablity",
+            "Immutable and secure system",
+            "Structured code and coding convention",
+            "Diary system"
+        ],
+        learnings: [
+            "Creating larger project",
+            "Structuring code",
+            "Security principles",
+            "Constructing clean code"
+        ]
     },
     7: {
         title: "Coming Soon...",
