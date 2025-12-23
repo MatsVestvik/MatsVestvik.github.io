@@ -37,7 +37,7 @@ function initializeMediaForDiv(divElement, contentDataIndex) {
                     background-image: url('${mediaUrl}');
                     background-size: cover;
                     background-repeat: no-repeat;
-                    background-position: center;
+                    background-position: center top;
                 `;
             } else {
                 // Create and setup video element
