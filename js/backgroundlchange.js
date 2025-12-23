@@ -18,15 +18,20 @@ function initializeMediaForDiv(divElement, contentDataIndex) {
     const mediaData = contentData[contentDataIndex];
     if (divElement && mediaData && (mediaData.backgroundVideo || mediaData.backgroundGif)) {
         let backgroundMedia = null;
+        let gifLoopInterval = null;
         
         divElement.addEventListener('mouseenter', () => {
             const mediaUrl = mediaData.backgroundVideo || mediaData.backgroundGif;
             const isGif = mediaData.backgroundGif ? true : false;
             
             if (isGif) {
-                // Create a div with background image for GIFs
-                backgroundMedia = document.createElement('div');
+                // Create an img element for GIFs (animates automatically)
+                backgroundMedia = document.createElement('img');
                 backgroundMedia.id = `page-background-media-${contentDataIndex}`;
+                backgroundMedia.src = mediaUrl;
+                backgroundMedia.alt = 'Background GIF';
+                
+                // Style the image to cover the background
                 backgroundMedia.style.cssText = `
                     position: fixed;
                     top: 0;
@@ -34,11 +39,22 @@ function initializeMediaForDiv(divElement, contentDataIndex) {
                     width: 100vw;
                     height: 100vh;
                     z-index: -100;
-                    background-image: url('${mediaUrl}');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center top;
+                    object-fit: cover;
+                    object-position: center top;
                 `;
+                
+                // Add to page - GIF will loop automatically
+                document.body.appendChild(backgroundMedia);
+                
+                // Restart GIF animation periodically to ensure continuous looping
+                gifLoopInterval = setInterval(() => {
+                    if (backgroundMedia && backgroundMedia.parentNode) {
+                        // Reload the GIF by resetting src with cache buster
+                        const url = new URL(mediaUrl, window.location.href);
+                        url.searchParams.set('t', Date.now());
+                        backgroundMedia.src = url.toString();
+                    }
+                }, 8000); // Adjust timing based on your GIF duration
             } else {
                 // Create and setup video element
                 backgroundMedia = document.createElement('video');
@@ -66,10 +82,10 @@ function initializeMediaForDiv(divElement, contentDataIndex) {
                     z-index: -100;
                     object-fit: cover;
                 `;
+                
+                // Add to page
+                document.body.appendChild(backgroundMedia);
             }
-            
-            // Add to page
-            document.body.appendChild(backgroundMedia);
             
             // Optional: Add dark overlay for better text readability
             let overlay = document.getElementById(`media-overlay-${contentDataIndex}`);
@@ -90,6 +106,12 @@ function initializeMediaForDiv(divElement, contentDataIndex) {
         });
         
         divElement.addEventListener('mouseleave', () => {
+            // Clear GIF loop interval
+            if (gifLoopInterval) {
+                clearInterval(gifLoopInterval);
+                gifLoopInterval = null;
+            }
+            
             // Remove media and overlay
             if (backgroundMedia && backgroundMedia.parentNode) {
                 backgroundMedia.parentNode.removeChild(backgroundMedia);
